@@ -1,0 +1,12 @@
+<a href="/Comedy/view">Comedies</a>
+<a href="/Action/view">Action</a>
+<a href="/Horror/view">Horror</a>
+<a href="/Sci-Fi/view">Horror</a>
+<a href="/Drama/view">Horror</a>
+<h1><%= @movies[:name] %></h1>
+<h2>Top Movies</h2>
+<ol>
+  <% @movies[:top_movies].each do |movie| %>
+    <li><%= movie %></li>
+  <% end %>
+</ol>
